@@ -42,3 +42,4 @@ D:\dotNET\trainings\huma-volve\api-versioning\ProductsAPI\bin\Debug\net10.0\Prod
 D:\dotNET\trainings\huma-volve\api-versioning\ProductsAPI\bin\Debug\net10.0\Products.Application.dll
 D:\dotNET\trainings\huma-volve\api-versioning\ProductsAPI\bin\Debug\net10.0\Prodcuts.Domain.pdb
 D:\dotNET\trainings\huma-volve\api-versioning\ProductsAPI\bin\Debug\net10.0\Products.Application.pdb
+D:\dotNET\trainings\huma-volve\api-versioning\ProductsAPI\obj\Debug\net10.0\ProductsAPI.sourcelink.json

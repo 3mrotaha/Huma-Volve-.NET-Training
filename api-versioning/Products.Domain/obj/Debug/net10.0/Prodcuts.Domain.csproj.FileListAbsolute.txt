@@ -12,3 +12,4 @@ D:\dotNET\trainings\huma-volve\api-versioning\Products.Domain\obj\Debug\net10.0\
 D:\dotNET\trainings\huma-volve\api-versioning\Products.Domain\obj\Debug\net10.0\Prodcuts.Domain.pdb
 D:\dotNET\trainings\huma-volve\api-versioning\Products.Domain\obj\Debug\net10.0\Prodcuts.Domain.genruntimeconfig.cache
 D:\dotNET\trainings\huma-volve\api-versioning\Products.Domain\obj\Debug\net10.0\ref\Prodcuts.Domain.dll
+D:\dotNET\trainings\huma-volve\api-versioning\Products.Domain\obj\Debug\net10.0\Prodcuts.Domain.sourcelink.json

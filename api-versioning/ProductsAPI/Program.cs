@@ -49,3 +49,4 @@ app.MapControllers();
 app.UseRouting();
 app.Run();
 
+public partial class Program {}
