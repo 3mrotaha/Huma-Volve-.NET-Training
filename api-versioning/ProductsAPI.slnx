@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Products.Domain/">
+    <Project Path="Products.Domain/Prodcuts.Domain.csproj" />
+  </Folder>
+  <Project Path="Prodcuts.Test/Prodcuts.Test.csproj" />
+  <Project Path="Products.Application/Products.Application.csproj" />
+  <Project Path="ProductsAPI/ProductsAPI.csproj" />
+</Solution>
