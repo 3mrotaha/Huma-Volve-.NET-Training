@@ -25,7 +25,7 @@ namespace ProductsAPI.Controllers.V2
 
             if (product is null)
                 return NotFound();
-
+            
             var response = product.ToProductResponseV2();
             
             return Ok(response);

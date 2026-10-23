@@ -19,7 +19,7 @@ public class ProductService(AppDbContext db) : IProductService
                                             .Include(p => p.Category)
                                             .Where(p => p.Id == id)
                                             .Select(p => new ProductDetailsDto(p.Name, p.Price, "EGP", p.CategoryId == null? string.Empty : p.Category!.Name))
-                                            .FirstOrDefaultAsync();
+                                            .FirstOrDefaultAsync(ct);
 
         if(product is null)
             return null;
@@ -34,7 +34,7 @@ public class ProductService(AppDbContext db) : IProductService
                                 .Select(p => new ProductDetailsDto(p.Name, p.Price, "EGP", p.CategoryId == null? string.Empty : p.Category!.Name))
                                 .Skip((page - 1) * pageSize)
                                 .Take(pageSize)
-                                .ToListAsync();
+                                .ToListAsync(ct);
 
         if(products is null)
             return null;
@@ -51,7 +51,7 @@ public class ProductService(AppDbContext db) : IProductService
                         .Select(p => new ProductDetailsDto(p.Name, p.Price, "EGP", p.Category!.Name))
                         .Skip((page - 1) * pageSize)
                         .Take(pageSize)
-                        .ToListAsync();
+                        .ToListAsync(ct);
 
         if(products is null)
             return null;
@@ -64,8 +64,8 @@ public class ProductService(AppDbContext db) : IProductService
     {
         try
         {
-            var product = _db.Products.Where(p => p.Id == id)
-                                    .FirstOrDefault();
+            var product = await _db.Products.Where(p => p.Id == id)
+                                    .FirstOrDefaultAsync(ct);
             
             if(product is null)
                 return null;
