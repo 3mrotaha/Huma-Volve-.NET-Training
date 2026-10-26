@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Employees.Domain/">
+    <Project Path="Employees.Domain/Employees.Domain.csproj" />
+  </Folder>
+  <Project Path="Employees.Test/Employees.Test.csproj" />
+  <Project Path="Employees.Application/Employees.Application.csproj" />
+  <Project Path="EmployeesAPI/EmployeesAPI.csproj" />
+</Solution>

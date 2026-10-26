@@ -1,0 +1,35 @@
+@EmployeesAPI_HostAddress = http://localhost:8080
+
+GET {{EmployeesAPI_HostAddress}}/api/v1/employees
+Accept: application/json
+
+###
+
+GET {{EmployeesAPI_HostAddress}}/api/v1/employees/1
+Accept: application/json
+
+###
+
+POST {{EmployeesAPI_HostAddress}}/api/v1/employees
+Content-Type: application/json
+
+{
+  "name": "New Employee",
+  "salary": 10000
+}
+
+###
+
+PUT {{EmployeesAPI_HostAddress}}/api/v1/employees/1
+Content-Type: application/json
+
+{
+  "name": "Updated Employee",
+  "salary": 12000
+}
+
+###
+
+DELETE {{EmployeesAPI_HostAddress}}/api/v1/employees/1
+
+###
